@@ -25,6 +25,36 @@ npx eslint --init
 ```js
 npx eslint <file>>
 ```
+5. Adjust linting rules
+
+```js
+// .eslintrc.js
+
+rules: {
+    semi: ['error', 'always'],
+    quotes: ['error', 'single'],
+    'no-console': 'error',
+    'react/jsx-filename-extension': [1, { extensions: ['.tsx', '.ts'] }],
+    'no-use-before-define': 'off',
+    '@typescript-eslint/no-use-before-define': ['error'],
+    'import/extensions': [
+      'error',
+      'ignorePackages',
+      {
+        ts: 'never',
+        tsx: 'never',
+      },
+    ],
+    'object-curly-newline': 'off',
+  },
+  settings: {
+    'import/resolver': {
+      node: {
+        extensions: ['.ts', '.tsx'],
+      },
+    },
+  },
+```
 
 **Resources:**
 - [create-react-app](https://create-react-app.dev/docs/adding-typescript)
