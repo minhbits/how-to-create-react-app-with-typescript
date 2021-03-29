@@ -14,7 +14,8 @@ npx eslint --init
 ```
 3. Add script to lint all files
 ```js
-# package.json
+#package.json
+
  "scripts": {
     ...
     "lint": "eslint . --ext .ts,.tsx"
