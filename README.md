@@ -55,7 +55,32 @@ rules: {
     },
   },
 ```
+#### 3. Setup: Stylelint
+1. Install ESLint
+
+```js
+npm install --save-dev stylelint stylelint-config-standard
+```
+
+2. Create a .stylelintrc.json configuration file in the root of your project
+```js
+{
+  "extends": "stylelint-config-standard"
+}
+```
+
+3. Add script to stylelint all files
+```js
+// package.json
+
+ "scripts": {
+    ...
+    "stylelint": "stylelint **/*.css"
+  },
+```
+
 
 **Resources:**
 - [create-react-app](https://create-react-app.dev/docs/adding-typescript)
 - [ESLint](https://eslint.org/docs/user-guide/getting-started)
+- [Stylelint](https://stylelint.io/user-guide/get-started)
