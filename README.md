@@ -55,6 +55,7 @@ rules: {
     },
   },
 ```
+
 #### 3. Setup: Stylelint
 1. Install ESLint
 
@@ -79,8 +80,47 @@ npm install --save-dev stylelint stylelint-config-standard
   },
 ```
 
+#### 4. Setup: react-query
+```js
+npm i react-query
+```
+
+#### 5. Setup: axios
+```js
+npm install axios
+```
+
+#### 6. Setup: prettier, eslint-config-prettier, stylelint-config-prettier
+```js
+npm install --save-dev --save-exact prettier
+
+npm install --save-dev eslint-config-prettier
+// .eslintrc.*
+{
+  "extends": [
+    "some-other-config-you-use",
+    "prettier"
+  ]
+}
+
+npm install --save-dev stylelint-config-prettier
+
+// .stylelintrc.*
+{
+  "extends": [
+    // other configs ...
+    "stylelint-config-prettier"
+  ]
+}
+```
+
 
 **Resources:**
 - [create-react-app](https://create-react-app.dev/docs/adding-typescript)
 - [ESLint](https://eslint.org/docs/user-guide/getting-started)
 - [Stylelint](https://stylelint.io/user-guide/get-started)
+- [react-query](https://react-query.tanstack.com/installation)
+- [axios](https://github.com/axios/axios)
+- [prettier](https://prettier.io/docs/en/install.html)
+- [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation)
+- [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier)
