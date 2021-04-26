@@ -113,6 +113,11 @@ npm install --save-dev stylelint-config-prettier
   ]
 }
 ```
+#### 7. Setup: react-router-dom
+```js
+npm install --save react-router-dom
+npm install @types/react-router-dom
+```
 
 
 **Resources:**
@@ -124,3 +129,4 @@ npm install --save-dev stylelint-config-prettier
 - [prettier](https://prettier.io/docs/en/install.html)
 - [eslint-config-prettier](https://github.com/prettier/eslint-config-prettier#installation)
 - [stylelint-config-prettier](https://github.com/prettier/stylelint-config-prettier)
+- [react-router-dom](https://github.com/ReactTraining/react-router)
